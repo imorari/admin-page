@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main-container">
+
+        <div id="header">
+            <div class="search-bar">search bar and icon</div>
+            <div class="profile">profile, image</div>
+            <div class="notification">notification</div>
+
+            <div class="actions">
+                <ul>
+                    <li>actions1</li>
+                    <li>actions2</li>
+                    <li>actions3</li>
+                </ul>
+            </div>
+
+        </div>
+
+<div id="sidebar">
+            <div class="logo"><svg  class="svg-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg> <p>Dashboard</p></div>
+        
+        <div class="main-menu">
+
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+                            <p>Home</p>
+                        </div>
+                    </li>
+
+                    <li>       
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>card-account-details</title><path d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z" /></svg>
+                            <p>Profile</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message-reply</title><path d="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z" /></svg>
+                            <p>Messages</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>history</title><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>
+                            <p>history</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>file-multiple</title><path d="M15,7H20.5L15,1.5V7M8,0H16L22,6V18A2,2 0 0,1 20,20H8C6.89,20 6,19.1 6,18V2A2,2 0 0,1 8,0M4,4V22H20V24H4A2,2 0 0,1 2,22V4H4Z" /></svg>
+                             <p>tasks</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-group-outline</title><path d="M12,5A3.5,3.5 0 0,0 8.5,8.5A3.5,3.5 0 0,0 12,12A3.5,3.5 0 0,0 15.5,8.5A3.5,3.5 0 0,0 12,5M12,7A1.5,1.5 0 0,1 13.5,8.5A1.5,1.5 0 0,1 12,10A1.5,1.5 0 0,1 10.5,8.5A1.5,1.5 0 0,1 12,7M5.5,8A2.5,2.5 0 0,0 3,10.5C3,11.44 3.53,12.25 4.29,12.68C4.65,12.88 5.06,13 5.5,13C5.94,13 6.35,12.88 6.71,12.68C7.08,12.47 7.39,12.17 7.62,11.81C6.89,10.86 6.5,9.7 6.5,8.5C6.5,8.41 6.5,8.31 6.5,8.22C6.2,8.08 5.86,8 5.5,8M18.5,8C18.14,8 17.8,8.08 17.5,8.22C17.5,8.31 17.5,8.41 17.5,8.5C17.5,9.7 17.11,10.86 16.38,11.81C16.5,12 16.63,12.15 16.78,12.3C16.94,12.45 17.1,12.58 17.29,12.68C17.65,12.88 18.06,13 18.5,13C18.94,13 19.35,12.88 19.71,12.68C20.47,12.25 21,11.44 21,10.5A2.5,2.5 0 0,0 18.5,8M12,14C9.66,14 5,15.17 5,17.5V19H19V17.5C19,15.17 14.34,14 12,14M4.71,14.55C2.78,14.78 0,15.76 0,17.5V19H3V17.07C3,16.06 3.69,15.22 4.71,14.55M19.29,14.55C20.31,15.22 21,16.06 21,17.07V19H24V17.5C24,15.76 21.22,14.78 19.29,14.55M12,16C13.53,16 15.24,16.5 16.23,17H7.77C8.76,16.5 10.47,16 12,16Z" /></svg>
+                            <p>Communities</p>
+                        </div> 
+                    </li>
+                </ul>  
+            </div>
+
+            <div class="settings-menu">
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cog</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
+                            <p>Settings</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>tooltip-question</title><path d="M20 2H4C3.47 2 2.96 2.21 2.59 2.59C2.21 2.96 2 3.47 2 4V16C2 16.53 2.21 17.04 2.59 17.41C2.96 17.79 3.47 18 4 18H8L12 22L16 18H20C20.53 18 21.04 17.79 21.41 17.41S22 16.53 22 16V4C22 3.47 21.79 2.96 21.41 2.59C21.04 2.21 20.53 2 20 2M10.05 6.04C10.59 5.68 11.3 5.5 12.19 5.5C13.13 5.5 13.88 5.71 14.42 6.12C14.96 6.54 15.23 7.1 15.23 7.8C15.23 8.24 15.08 8.63 14.79 9C14.5 9.36 14.12 9.64 13.66 9.85C13.4 10 13.23 10.15 13.14 10.32C13.05 10.5 13 10.72 13 11H11C11 10.5 11.1 10.16 11.29 9.92C11.5 9.68 11.84 9.4 12.36 9.08C12.62 8.94 12.83 8.76 13 8.54C13.14 8.33 13.22 8.08 13.22 7.8C13.22 7.5 13.13 7.28 12.95 7.11C12.77 6.93 12.5 6.85 12.19 6.85C11.92 6.85 11.7 6.92 11.5 7.06C11.34 7.2 11.24 7.41 11.24 7.69H9.27C9.22 7 9.5 6.4 10.05 6.04M11 14V12H13V14Z" /></svg>
+                            <p>Support</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>shield-check-outline</title><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9" /></svg>
+                            <p>Privacy</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</div>
+
+        <div id="main-content">
+            <div class="anouncements">anouncements</div>
+            <div class="trending">trending</div>
+            <div class="articles">articles</div>
+        </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
