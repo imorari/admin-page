@@ -35,7 +35,7 @@ html{
 }
 
 
-h3,p{
+h3,p,h1{
     margin: 0;
 }
 button{
@@ -67,7 +67,7 @@ input:focus{
     padding-left: 4%;
 }
 .content{
-    background-color: gray;
+    background-color: white;
     grid-column: 2/4;
     grid-row: 2/6;
     display: grid;
@@ -96,20 +96,29 @@ input:focus{
     gap: 20px;
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
     box-sizing: border-box;
     font-size: 18px;
-    height: 300px;
+    height: 350px;
     width: 100%;
     padding: 2%;
     background-color: white;
     border-radius: 25px;
     border-left: 8px solid orange;
-
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card-actions{
+    padding: 10px 10px 0 0;
+    align-self: flex-end;
+    display: flex;
+    gap: 5px;
 }
 body{
     padding: 0;
-    margin: 0;
-     background-color: blueviolet; 
+    margin: 0; 
     display: grid;
     grid-template-columns: 20em 1fr;
     grid-template-rows: min-content auto auto auto;
@@ -148,6 +157,50 @@ body{
 
 
 
+/*Delete if you mess up*/
+.announcement-card-bottom p ,
+.announcement-card-top p{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden; 
+    text-overflow: ellipsis;
+  }
+  
+  .announcement-card-bottom div,
+.announcement-card-top div{
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.announcement-card-bottom,
+.announcement-card-top{
+    background-color: wheat;
+    height: 600px;
+    border-radius: 20px;
+    width: 400px;
+    padding: 0 10px 0 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px,1fr));
+    justify-content: start;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.announcements{
+    margin-right: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
 
 
 
