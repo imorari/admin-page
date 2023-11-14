@@ -70,7 +70,40 @@ input:focus{
     background-color: gray;
     grid-column: 2/4;
     grid-row: 2/6;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 60px 1fr;
+    gap: 20px;
+}
+.right-title{
+    grid-column: 2/3;    
+}
+.left-title{
+    grid-column: 1/2; 
+}
 
+.right-title, .left-title{
+    align-self: flex-end;
+    padding-left: 20px;
+    font-size: x-large;
+    font-weight: 600;
+
+}
+.article{
+    display: grid;
+    padding-left: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+.card{
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 300px;
+    width: 100%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 25px;
+    border-left: 8px solid orange;
 
 }
 body{
@@ -143,7 +176,9 @@ img{
     height: 60px;
     border-radius: 50%;
 }
-
+.card-actions svg{
+    fill: black;
+}
 .left-group img {
     height: 80px;
     width: 80px;
