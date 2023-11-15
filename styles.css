@@ -4,11 +4,12 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    background-color: yellow;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
 }
 .left-group{
     display: flex;
@@ -23,6 +24,9 @@ html{
     justify-content: flex-end;
     gap: 20px;
     padding: 0 50px;
+}
+.left-group svg, .right-group svg{
+    fill: black;
 }
 
 .search-bar{
@@ -39,7 +43,7 @@ h3,p,h1{
     margin: 0;
 }
 button{
-    background-color: aqua;
+    background-color: #0ea5e9;
     border-radius: 20px;
     width: 120px;
     height: 40px;
@@ -59,21 +63,24 @@ input:focus{
 
 
 .sidebar{
-    background-color: aqua;
+    background-color: #0ea5e9;
     grid-column: span 1;
     grid-row: 1/6;
      display: flex;
     flex-direction: column;
     padding-left: 4%;
+
 }
 .content{
-    background-color: white;
+    background-color:#cbd5e1;
     grid-column: 2/4;
     grid-row: 2/6;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 60px 1fr;
     gap: 20px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    
 }
 .right-title{
     grid-column: 2/3;    
@@ -114,14 +121,17 @@ input:focus{
     padding: 10px 10px 0 0;
     align-self: flex-end;
     display: flex;
-    gap: 5px;
+    gap: 25px;
 }
 body{
     padding: 0;
     margin: 0; 
     display: grid;
     grid-template-columns: 20em 1fr;
-    grid-template-rows: min-content auto auto auto;
+   
+    grid-template-rows: min-content auto auto auto; 
+    row-gap: 20px;
+  
 }
 
 
@@ -132,6 +142,7 @@ body{
     font-size: 3rem;
     padding-right: 4%;
     margin-bottom: 20px;
+    color: white;
 }
 .logo svg{
     height: 80px;
@@ -143,6 +154,7 @@ body{
     align-items: center;
     font-size: 1.5rem;
     gap: 6%;
+    color: white;
 } 
 .main-menu{
     height: 100%;
@@ -182,10 +194,10 @@ body{
 
 .announcement-card-bottom,
 .announcement-card-top{
-    background-color: wheat;
-    height: 600px;
+    background-color: white;
+    height: 500px;
     border-radius: 20px;
-    width: 400px;
+    width: 300px;
     padding: 0 10px 0 10px;
     display: grid;
     gap: 20px;
@@ -213,6 +225,14 @@ body{
 
 
 
+.card:hover,.card svg:hover,.announcement-card-bottom:hover, .announcement-card-top:hover, .menu-item:hover, .header svg:hover, .logo:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(116, 116, 247);
+}
 
 
 
